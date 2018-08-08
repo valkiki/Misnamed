@@ -1,0 +1,50 @@
+<!doctype html>
+<htmll lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+        <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+
+        <title>Function namer</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h1 class="display-2">Misnamed</h1>
+                    <blockquote class="blockquote text-center">
+                        <p class="mb-0">Un nom doit-il toujours signifier quelque chose ?</p>
+                        <footer class="blockquote-footer">Lewis Carroll</footer>
+                    </blockquote>
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="functionName" class="bmd-label-floating">Ma fonction sert à ...</label>
+                            <input type="text" class="form-control" id="functionName">
+                        </div>
+
+                        <span class="form-group bmd-form-group">
+                            <button type="button" class="btn btn-outline-primary" id="translate" name="translate">Traduire</button>
+                        </span>
+                    </form>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-sm">
+                    <div id="functionTarget"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../src/jquery.min.js"></script>
+        <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+        <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+
+
+        <script src="../src/formatter.js"></script>
+        <script src="../src/translator.js"></script>
+        <script src="../src/app.js"></script>
+    </body>
+</htmll>
